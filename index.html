@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Example Site</title>
+  <meta name="description" content="A simple HTML5 Template for new projects.">
+  <meta name="author" content="SitePoint">
+
+  <meta property="og:title" content="Example Site">
+  <meta property="og:type" content="website">
+  <!-- <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/"> -->
+  <meta property="og:description" content="A starter website for learning.">
+  <meta property="og:image" content="images/favicon.png">
+
+  <link rel="icon" type="image/x-icon" href="images/cheese.ico">
+
+  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+
+  <style>
+    body {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    footer {
+      margin-top: 5%;
+    }
+
+    img {
+      width: 50%;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+
+    .center-text {
+      text-align: center;
+    }
+
+    .top-space {
+      margin-top: 5rem;
+    }
+
+    #image-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: minmax(100px, auto);
+      row-gap: 1rem;
+      text-align: center;
+    }
+
+    .whole-row {
+      grid-column: 1 / 5;
+    }
+
+    .front-half-row {
+      grid-column: 1 / 3;
+    }
+
+    .back-half-row {
+      grid-column: 3/5;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 id="title" class="center-text">Welcome to the Magical World of Cheese</h1>
+    <p id="welcome-text" class="center-text">Enjoy all the delicious milk byproducts here on display!</p>
+  </header>
+
+  <main>
+    <h2 id="gallery-title" class="center-text top-space">Our gallery of cheesey magic here for your pervy eyes to enjoy...</h2>
+
+    <div id="image-grid">
+      <img class="whole-row" src="images/cheese.png" alt="Various hard cheeses on a plate in front of a bottle of wine and a basket"/>
+      <img class="front-half-row" src="images/cheese2.png" alt="Multiple cheese wheels with hard rinds on a shelf"/>
+      <img class="back-half-row" src="images/cheese3.png" alt="Multiple cheese wheels with no rinds stacked on factory shelves"/>
+    </div>
+
+    <p class="center-text">Soon you too will enjoy all the magical options available within the cheese space! We applaud your visit today :-)</p>
+  </main>
+
+  <footer class="center-text">
+    Copyright 2022 John MacGregor <a href="mailto:john.macgregor@gmail.com">Contact</a>
+  </footer>
+  <!-- <script src="js/scripts.js"></script> -->
+</body>
+</html>
